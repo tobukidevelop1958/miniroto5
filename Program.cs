@@ -126,11 +126,11 @@ namespace miniroto5
             // 使用方法 : date1, atari1, date2を毎回設定します。
             // roto5の抽選時刻、当り番号を指定する
             // 前回抽選時刻（予想）
-            DateTime date1 = new DateTime(2021, 8, 17, 19, 0, 0);
+            DateTime date1 = new DateTime(2021, 8, 24, 19, 0, 0);
             // 前回当り番号
-            int[] atari1 = { 11, 23, 25, 29, 30 };
+            int[] atari1 = { 3, 4, 16, 19, 27 };
             // 今回抽選時刻（予想）
-            DateTime date2 = new DateTime(2021, 8, 24, 19, 0, 0);
+            DateTime date2 = new DateTime(2021, 8, 31, 19, 0, 0);
             // 乱数初期化
             string datestr1 = date1.ToString("MMddHHmmss");
             int random1 = int.Parse(datestr1);
@@ -180,7 +180,7 @@ namespace miniroto5
                     // 07/27 19時 抽選試行回数    780875回   当選  12 16 17 24 31
                     // 08/10 19時 抽選試行回数    108948回   当選  09 12 17 18 27
                     // 08/17 19時 抽選試行回数    157916回   当選  11,23,25,29,30   試行回数再計算  再計算不可能
-                    // 08/24 19時 抽選試行回数    474458回   当選
+                    // 08/24 19時 抽選試行回数    474458回   当選  3,4,16,19,27     試行回数再計算  60934
                     // くじ計算
                     Console.WriteLine("ロト５　当たりくじ番号表示");
                     for (i = 0; i < num1; i++)
